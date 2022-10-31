@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
 
-  interface menu {
+  interface Menu {
     name: string;
     link: string;
   }
@@ -12,7 +12,7 @@ function Navbar() {
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
 
-  const menuLink: menu[] = [
+  const menuLink: Menu[] = [
       {name: 'HOME', link: '#home'},
       {name: 'ABOUT', link: '#about'},
       {name: 'SKILLS', link: '#skills'},
@@ -39,7 +39,7 @@ function Navbar() {
         <div className={`${sticky? 'md:bg-white/0 bg-white': 'bg-white'} text-gray-900 md:block hidden px-7 py-2 font-medium rounded-bl-full`}>
           <ul className="flex items-center gap-1 py-2 text-lg">
             {
-              menuLink?.map((section: menu, i: number) => (
+              menuLink?.map((section: Menu, i: number) => (
                 <li key={i} className="px-6 hover:text-cyan-600">
                   <a href={section?.link}>{section?.name}</a>
                 </li>
@@ -53,7 +53,7 @@ function Navbar() {
         <div className={`md:hidden text-gray-900 absolute w-2/3 h-screen px-7 py-2 font-medium bg-white top-0 right-0 duration-300 ${open? 'right-0': 'right-[-100%]'}`}>
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
             {
-              menuLink?.map((menu: menu, i: number) => (
+              menuLink?.map((menu: Menu, i: number) => (
                 <li key={i} className="px-6 hover:text-cyan-600 ">
                   <a href={menu?.link}>{menu?.name}</a>
                 </li>
