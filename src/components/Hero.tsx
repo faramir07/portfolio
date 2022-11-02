@@ -2,8 +2,9 @@ import IonIcon from "@reacticons/ionicons"
 
 function Hero() {
 
-  const socialMedia: string[] = ['logo-github', 'logo-linkedin']
-  
+  type socialType = ['logo-github', 'logo-linkedin']
+
+  const socialMedia: socialType = ['logo-github', 'logo-linkedin']
 
   return (
     <section id="home" className="min-h-screen flex py-10 md:flex-row flex-col items-center">
