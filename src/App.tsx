@@ -1,7 +1,8 @@
-import About from './components/About'
-import Bot from './components/Bot'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
+import About from './components/About/About'
+import Bot from './components/Bot/Bot'
+import Hero from './components/Hero/Hero'
+import Navbar from './components/Navbar/Navbar'
+import Skills from './components/Skills/Skills'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Bot />
       <Hero />
       <About />
+      <Skills />
     </div>
   )
 }

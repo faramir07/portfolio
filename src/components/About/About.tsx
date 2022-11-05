@@ -1,4 +1,4 @@
-import cv from '../assets/cv Miguel Linares.pdf'
+import cv from '../../assets/cv Miguel Linares.pdf'
 
 function About() {
 
