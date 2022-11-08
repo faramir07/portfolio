@@ -12,6 +12,7 @@ const skills: Skilltype[] = [
   {name: 'HTML', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png', level: 'Experto'},
   {name: 'JAVASCRIPT', url: 'https://www.svgrepo.com/show/353925/javascript.svg', level: 'Avanzado'},
   {name: 'REACT', url: 'https://www.svgrepo.com/show/354259/react.svg', level: 'Intermedio'},
+  {name: 'REACT-NATIVE', url: 'https://www.svgrepo.com/show/354259/react.svg', level: 'Principiante'},
   {name: 'REDUX', url: 'https://www.svgrepo.com/show/303557/redux-logo.svg', level: 'Intermedio'},
   {name: 'TAILWIND', url: 'https://www.svgrepo.com/show/354431/tailwindcss-icon.svg', level: 'Intermedio'},
   {name: 'TYPESCRIPT', url: 'https://www.svgrepo.com/show/354478/typescript-icon.svg', level: 'Avanzado'},
