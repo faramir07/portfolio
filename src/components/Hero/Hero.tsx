@@ -24,8 +24,8 @@ function Hero() {
           <button className="btn-primary mt-4">Contáctame</button>
           <div className="mt-8 text-3xl flex item-center md:justify-start justifi-center gap-5">
             {
-              socialMedia?.map(social => (
-                <div key={social} className="text-gray-600 hover:text-white cursor-pointer">
+              socialMedia?.map((social, i: number) => (
+                <div key={i} className="text-gray-600 hover:text-white cursor-pointer">
                   <IonIcon name={social}></IonIcon>
                 </div>
               ))

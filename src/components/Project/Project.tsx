@@ -35,12 +35,12 @@ function Project() {
           modules={[Pagination, Autoplay]}>
             {
               projects?.map((projects: ProjectType, i: number) => (
-                <SwiperSlide>
+                <SwiperSlide key={i}>
                   <div className='h-fit w-full p-4 bg-slate-700 rounded-xl'>
                     <img src={projects.img} alt={projects.name} className='rounded-lg'/>
                     <h3 className='text-xl my-4'>{projects.name}</h3>
                     <div className='flex gap-3'>
-                      <a href={projects.gitUrl} className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'>Github</a>
+                      <a href={projects.gitUrl} target='_blank' className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'>Github</a>
                     </div>
                   </div>
                 </SwiperSlide>
