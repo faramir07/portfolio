@@ -1,5 +1,6 @@
 import IonIcon from "@reacticons/ionicons";
 import { useEffect, useState } from "react";
+import logo from '../../assets/logo-miguel.svg';
 
 
 function Navbar() {
@@ -32,11 +33,9 @@ function Navbar() {
     <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky?'bg-white/60 text-gray-900':'text-white'}`}>
       <div className="flex items-center justify-between">
         <div className="mx-7">
-          <h4 className="text-4xl uppercase font-bold">
-            M<span className="text-cyan-600">igue</span>l
-          </h4>
+          <img className='w-24' src={logo} alt="logo miguel" />
         </div>
-        <div className={`${sticky? 'md:bg-white/0 bg-white': 'bg-white'} text-gray-900 md:block hidden px-7 py-2 font-medium rounded-bl-full`}>
+        <div className={`${sticky? 'md:bg-white/0 bg-white': 'bg-white'} text-gray-900 md:block hidden px-7 py-3 font-medium rounded-bl-full`}>
           <ul className="flex items-center gap-1 py-2 text-lg">
             {
               menuLink?.map((section: Menu, i: number) => (

@@ -21,7 +21,9 @@ function Hero() {
             Mi Nombre es <span>Miguel Linares</span>
           </h1>
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">Fullstack Developer</h4>
+          <a href="#contact">
           <button className="btn-primary mt-4">Contáctame</button>
+          </a>
           <div className="mt-8 text-3xl flex item-center md:justify-start justifi-center gap-5">
             {
               socialMedia?.map((social, i: number) => (
