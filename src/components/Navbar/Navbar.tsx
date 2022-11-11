@@ -54,7 +54,7 @@ function Navbar() {
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
             {
               menuLink?.map((menu: Menu, i: number) => (
-                <li key={i} className="px-6 hover:text-cyan-600 ">
+                <li onClick={() => setOpen(false)} key={i} className="px-6 hover:text-cyan-600 ">
                   <a href={menu?.link}>{menu?.name}</a>
                 </li>
               ))
