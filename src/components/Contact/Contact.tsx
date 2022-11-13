@@ -34,12 +34,12 @@ const validate = (input: InputType): InputType => {
 };
 
 function Contact() {
-  const [error, setError] = React.useState<InputType>({
+  const [error, setError] = useState<InputType>({
     user_name: "",
     user_email: "",
     message: "",
   });
-  const [input, setInput] = React.useState<InputType>({
+  const [input, setInput] = useState<InputType>({
     user_name: "",
     user_email: "",
     message: "",
@@ -65,7 +65,8 @@ function Contact() {
 
   console.log(error);
 
-  const handleChange = (e: React.ChangeEvent<HTMLFormElement>) => {
+  const handleChange: React.ChangeEventHandler<HTMLInputElement & HTMLTextAreaElement> = (e) => {
+  
     setInput({
       ...input,
       [e.target.name]: e.target.value,
@@ -154,6 +155,7 @@ function Contact() {
             defaultValue=""
             name="user_name"
             placeholder="Tu Nombre"
+            value=''
             onChange={handleChange}
             required
           />
