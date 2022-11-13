@@ -1,13 +1,15 @@
-import IonIcon from "@reacticons/ionicons"
+import IonIcon from "@reacticons/ionicons";
 
 function Hero() {
+  type socialType = ["logo-github", "logo-linkedin"];
 
-  type socialType = ['logo-github', 'logo-linkedin']
-
-  const socialMedia: socialType = ['logo-github', 'logo-linkedin']
+  const socialMedia: socialType = ["logo-github", "logo-linkedin"];
 
   return (
-    <section id="home" className="min-h-screen flex py-10 md:flex-row flex-col items-center">
+    <section
+      id="home"
+      className="min-h-screen flex py-10 md:flex-row flex-col items-center"
+    >
       <div className="flex-1 flex items-center justify-center">
         <img src="" alt="miguel" className="md:w.11/12 h-full object-cover" />
       </div>
@@ -20,23 +22,26 @@ function Hero() {
             </span>
             Mi Nombre es <span>Miguel Linares</span>
           </h1>
-          <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">Fullstack Developer</h4>
+          <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
+            Fullstack Developer
+          </h4>
           <a href="#contact">
-          <button className="btn-primary mt-4">Contáctame</button>
+            <button className="btn-primary mt-4">Contáctame</button>
           </a>
           <div className="mt-8 text-3xl flex item-center md:justify-start justifi-center gap-5">
-            {
-              socialMedia?.map((social, i: number) => (
-                <div key={i} className="text-gray-600 hover:text-white cursor-pointer">
-                  <IonIcon name={social}></IonIcon>
-                </div>
-              ))
-            }
+            {socialMedia?.map((social, i: number) => (
+              <div
+                key={i}
+                className="text-gray-600 hover:text-white cursor-pointer"
+              >
+                <IonIcon name={social}></IonIcon>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
