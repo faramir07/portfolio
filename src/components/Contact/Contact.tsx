@@ -65,8 +65,9 @@ function Contact() {
 
   console.log(error);
 
-  const handleChange: React.ChangeEventHandler<HTMLInputElement & HTMLTextAreaElement> = (e) => {
-  
+  const handleChange: React.ChangeEventHandler<
+    HTMLInputElement & HTMLTextAreaElement
+  > = (e) => {
     setInput({
       ...input,
       [e.target.name]: e.target.value,
@@ -144,7 +145,11 @@ function Contact() {
         </h3>
         <p className="text-gray-400 mt-3 text-lg">Ponerse en Contacto</p>
       </div>
-      <div className="mt-16 flex md:flex-row flex-col gap-6 max-w-5xl bg-gray-800 p-6 rounded-lg mx-auto">
+      <div
+        className="mt-16 flex md:flex-row flex-col gap-6 max-w-5xl bg-gray-800 p-6 rounded-lg mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <form
           onSubmit={sendEmail}
           className="flex flex-col flex-1 gap-6"
@@ -155,9 +160,12 @@ function Contact() {
             defaultValue=""
             name="user_name"
             placeholder="Tu Nombre"
-            value=''
+            value=""
             onChange={handleChange}
             required
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
           />
           {error.user_name ? (
             <span className="text-red-600">{error.user_name}</span>
@@ -169,6 +177,9 @@ function Contact() {
             placeholder="Tu Correo"
             onChange={handleChange}
             required
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="3000"
           />
           {error.user_email ? (
             <span className="text-red-600">{error.user_email}</span>
@@ -180,6 +191,9 @@ function Contact() {
             rows={10}
             onChange={handleChange}
             required
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="5000"
           ></textarea>
           {error.message ? (
             <span className="text-red-600">{error.message}</span>
@@ -191,7 +205,11 @@ function Contact() {
         <div className="flex flex-col gap-7">
           {contact?.map((contact, i: number) => (
             <div key={i} className="flex gap-4 w-full items-center">
-              <div className="min-w-[3.5rem] text-4xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
+              <div
+                className="min-w-[3.5rem] text-4xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full"
+                data-aos="fade-up-left"
+                data-aos-duration={`${i+1}000`}
+              >
                 <a href={contact.link} target="_blank">
                   <IonIcon name={contact.icon}></IonIcon>
                 </a>

@@ -1,5 +1,10 @@
 import { Skilltype } from "./utility";
 import skills from "./utility";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+AOS.refresh();
 
 function Skills() {
   return (
@@ -15,6 +20,8 @@ function Skills() {
           <div
             key={i}
             className=" text-black hover:text-red-600 border-2 border-cyan-600 relative min-w-[14rem] max-w-[14rem] bg-gray-400 p-10 rounded-xl"
+            data-aos="flip-down"
+            data-aos-duration="1000"
           >
             <div className="flex items-center justify-center rounded-full">
               <div className=" flex justify-center items-center flex-col m--10">

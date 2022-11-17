@@ -57,7 +57,13 @@ function Project() {
             ))}
           </Swiper>
         </div>
-        <div className="lg:block hidden">
+        <div
+          className="lg:block hidden"
+          data-aos="zoom-in-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="2000"
+        >
           <img src="" alt="Miguel" className="h-96" />
         </div>
       </div>
