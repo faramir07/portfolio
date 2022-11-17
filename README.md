@@ -50,7 +50,7 @@ Siempre me ha gustado el mundo del IT, y por mi cuenta he aprendido a manejar di
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=faramir07&repo=portfolio)](https://github.com/faramir07/portfolio)
 
-## 🖥 Contact
+## 🎯 Contact
 
 📧 Malg20012002@gmail.com
 👉 <a  href="https://www.linkedin.com/in/miguel-linares-gamez/">Perfil de Linkedin</a>
