@@ -1,7 +1,7 @@
 
 # Portafolio
 
-Es una Pagina web personal, Este proyecto fue desarrollado desde 0, inicialisado con Vite + React + TS, para el css tailwindcss,
+Es una Pagina web personal, Este proyecto fue desarrollado desde 0, inicialisado con Vite + React + TS, y con tailwindcss,
 
 ## 🚀 About Me
 I'm a full stack developer...
