@@ -16,9 +16,9 @@ function Project() {
       </div>
       <br />
       <div className="flex max-w-6xl px-5 mx-auto item-center relative">
-        <div className="w-10/12 m-auto">
+        <div className="w-11/12 m-auto">
           <Swiper
-            className="p-10"
+            className="p-8"
             slidesPerView={1.2}
             spaceBetween={20}
             breakpoints={{
@@ -37,11 +37,11 @@ function Project() {
           >
             {projects?.map((projects: ProjectType, i: number) => (
               <SwiperSlide key={i}>
-                <div className="w-full h-auto p-4 bg-slate-700 rounded-xl">
+                <div className="w-full p-4 bg-slate-700 rounded-xl">
                   <img
                     src={projects.img}
                     alt={projects.name}
-                    className="rounded-lg w-full h-52"
+                    className="rounded-lg w-full h-56"
                   />
                   <h3 className="text-xl my-4">{projects.name}</h3>
                   <div className="flex gap-3">

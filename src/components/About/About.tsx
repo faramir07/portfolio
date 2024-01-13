@@ -1,7 +1,7 @@
 import cv from "../../assets/cv Miguel Linares.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import miguel from "../../assets/miguel.png";
+import miguel from "../../assets/miguel-min.png";
 
 AOS.init();
 AOS.refresh();
