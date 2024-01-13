@@ -1,4 +1,4 @@
-import Dogs from "../../assets/Dogs.png";
+import Dogs from "../../assets/dogs.png";
 import qatarbets from "../../assets/qatarbets.png";
 import native from "../../assets/native.png";
 import portafolio from "../../assets/portafolio.png";
