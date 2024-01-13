@@ -1,8 +1,8 @@
-import dogs from "../../assets/dogs-min.png";
-import qatarbets from "../../assets/qatarbets-min.png";
+import dogs from "../../assets/dogs-min.jpg";
+import qatarbets from "../../assets/qatarbets-min.jpg";
 import native from "../../assets/native-min.png";
-import portafolio from "../../assets/portafolio-min.png";
-import somosAwaq from "../../assets/somosawaqpage-min.png";
+import portafolio from "../../assets/portafolio-min.jpg";
+import somosAwaq from "../../assets/somosawaqpage-min.jpg";
 
 export interface ProjectType {
   name: string;
