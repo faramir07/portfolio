@@ -11,6 +11,7 @@ export interface ProjectType {
   pageUrl?: string;
 }
 
+
 const projects: ProjectType[] = [
   {
     name: "Pi Dogs",
