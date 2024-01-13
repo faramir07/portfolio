@@ -16,8 +16,9 @@ function Project() {
       </div>
       <br />
       <div className="flex max-w-6xl px-5 mx-auto item-center relative">
-        <div className="lg:w-2/3 w-full">
+        <div className="w-10/12 m-auto">
           <Swiper
+            className="p-10"
             slidesPerView={1.2}
             spaceBetween={20}
             breakpoints={{
@@ -36,7 +37,7 @@ function Project() {
           >
             {projects?.map((projects: ProjectType, i: number) => (
               <SwiperSlide key={i}>
-                <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
+                <div className="w-full h-auto p-4 bg-slate-700 rounded-xl">
                   <img
                     src={projects.img}
                     alt={projects.name}
@@ -44,27 +45,28 @@ function Project() {
                   />
                   <h3 className="text-xl my-4">{projects.name}</h3>
                   <div className="flex gap-3">
-                    <a
-                      href={projects.gitUrl}
-                      target="_blank"
-                      className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                    >
-                      Github
-                    </a>
+                    {projects.gitUrl ? (
+                      <a
+                        href={projects.gitUrl}
+                        target="_blank"
+                        className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                      >
+                        Github
+                      </a>
+                    ) : (
+                      <a
+                        href={projects.pageUrl}
+                        target="_blank"
+                        className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                      >
+                        Page
+                      </a>
+                    )}
                   </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-        <div
-          className="lg:block hidden"
-          data-aos="zoom-in-left"
-          data-aos-anchor="#example-anchor"
-          data-aos-offset="500"
-          data-aos-duration="2000"
-        >
-          <img src="" alt="Miguel" className="h-96" />
         </div>
       </div>
     </section>

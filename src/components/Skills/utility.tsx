@@ -55,16 +55,21 @@ const skills: Skilltype[] = [
   {
     name: "NODEJS",
     url: "https://www.svgrepo.com/show/303658/nodejs-1-logo.svg",
-    level: "Intermedio",
+    level: "Avanzado",
   },
   {
     name: "POSTGRSQL",
     url: "https://www.svgrepo.com/show/354200/postgresql.svg",
-    level: "Intermedio",
+    level: "Avanzado",
   },
   {
     name: "SEQUELIZE",
     url: "https://www.svgrepo.com/show/354333/sequelize.svg",
+    level: "Avanzado",
+  },
+  {
+    name: "AZURE",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/800px-Microsoft_Azure.svg.png",
     level: "Intermedio",
   },
 ];

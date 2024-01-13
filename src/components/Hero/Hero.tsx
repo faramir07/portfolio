@@ -1,14 +1,25 @@
 import IonIcon from "@reacticons/ionicons";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import miguel from "../../assets/miguel.png";
 
 AOS.init();
 AOS.refresh();
 
 function Hero() {
-  type socialType = ["logo-github", "logo-linkedin"];
+  type NameType = "logo-github" | "logo-linkedin";
+  interface socialType {
+    url: string;
+    name: NameType;
+  }
 
-  const socialMedia: socialType = ["logo-github", "logo-linkedin"];
+  const socialMedia: socialType[] = [
+    { name: "logo-github", url: "https://github.com/faramir07" },
+    {
+      name: "logo-linkedin",
+      url: "https://www.linkedin.com/in/miguel-linares-gamez",
+    },
+  ];
 
   return (
     <section
@@ -21,7 +32,11 @@ function Hero() {
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       >
-        <img src="" alt="miguel" className="md:w.11/12 h-full object-cover" />
+        <img
+          src={miguel}
+          alt="miguel"
+          className="rounded-full w-3/4 object-cover"
+        />
       </div>
       <div className="flex-1">
         <div className="md:text-left text-center">
@@ -74,7 +89,9 @@ function Hero() {
                 key={i}
                 className="text-gray-600 hover:text-white cursor-pointer"
               >
-                <IonIcon name={social}></IonIcon>
+                <a href={social.url} target="_blank">
+                  <IonIcon name={social.name}></IonIcon>
+                </a>
               </div>
             ))}
           </div>

@@ -1,6 +1,7 @@
 import cv from "../../assets/cv Miguel Linares.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import miguel from "../../assets/miguel.png";
 
 AOS.init();
 AOS.refresh();
@@ -12,8 +13,8 @@ function About() {
   }
 
   const info: Info[] = [
-    { text: "Años de Experiencia", count: "0.7" },
-    { text: "Proyectos Completados", count: "03" },
+    { text: "Años de Experiencia", count: "1.7" },
+    { text: "Proyectos Completados", count: "05" },
   ];
 
   return (
@@ -69,7 +70,7 @@ function About() {
               data-aos-duration="2000"
             >
               <img
-                src=""
+                src={miguel}
                 alt="Miguel"
                 className="w-full object-cover bg-cyan-600 rounded-xl"
               />

@@ -1,11 +1,14 @@
 import Dogs from "../../assets/Dogs.png";
 import qatarbets from "../../assets/qatarbets.png";
 import native from "../../assets/native.png";
+import portafolio from "../../assets/portafolio.png";
+import somosAwaq from "../../assets/somosawaqpage.png";
 
 export interface ProjectType {
   name: string;
-  gitUrl: string;
+  gitUrl?: string;
   img: string;
+  pageUrl?: string;
 }
 
 const projects: ProjectType[] = [
@@ -27,7 +30,12 @@ const projects: ProjectType[] = [
   {
     name: "Portafolio",
     gitUrl: "https://github.com/faramir07/portfolio.git",
-    img: "",
+    img: `${portafolio}`,
+  },
+  {
+    name: "SomosAwaq",
+    pageUrl: "https://somosawaq.org",
+    img: `${somosAwaq}`,
   },
 ];
 
