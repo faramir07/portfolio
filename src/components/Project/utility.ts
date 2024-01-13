@@ -16,6 +16,7 @@ const projects: ProjectType[] = [
     name: "Pi Dogs",
     gitUrl: "https://github.com/faramir07/PI-Dogs-main",
     img: `${dogs}`,
+    pageUrl: "https://pi-dogs-main-three.vercel.app/homePage",
   },
   {
     name: "Qatarbets-web",

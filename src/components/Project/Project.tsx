@@ -46,18 +46,29 @@ function Project() {
                   <h3 className="text-xl my-4">{projects.name}</h3>
                   <div className="flex gap-3">
                     {projects.gitUrl ? (
-                      <a
-                        href={projects.gitUrl}
-                        target="_blank"
-                        className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                      >
-                        Github
-                      </a>
+                      <div>
+                        <a
+                          href={projects.gitUrl}
+                          target="_blank"
+                          className="text-cyan-600 rounded-lg m-1 bg-gray-800 px-3 py-1 inline-block"
+                        >
+                          Github
+                        </a>
+                        {projects.pageUrl ? (
+                          <a
+                            href={projects.pageUrl}
+                            target="_blank"
+                            className="text-cyan-600 rounded-lg m-1 bg-gray-800 px-3 py-1 inline-block"
+                          >
+                            Page
+                          </a>
+                        ) : null}
+                      </div>
                     ) : (
                       <a
                         href={projects.pageUrl}
                         target="_blank"
-                        className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                        className="text-cyan-600 rounded-lg m-1 bg-gray-800 px-3 py-1 inline-block"
                       >
                         Page
                       </a>
