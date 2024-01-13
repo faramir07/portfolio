@@ -1,9 +1,9 @@
-
 # Portafolio
 
 Es una Pagina web personal, Este proyecto fue desarrollado desde 0, inicialisado con Vite + React + TS, y con tailwindcss,
 
 ## 🚀 About Me
+
 I'm a full stack developer...
 
 Siempre me ha gustado el mundo del IT, y por mi cuenta he aprendido a manejar diferentes herramientas como wordpress, wix, pero no se compara con la programación, una vez que lo aprendí me enamore perdidamente y es lo que quiero hacer por el resto de mi vida, me gusta trabajar en equipo en ambientes divertidos, productivos, con personas que le apuntan a mejorar y a prender.
@@ -34,11 +34,11 @@ Siempre me ha gustado el mundo del IT, y por mi cuenta he aprendido a manejar di
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/>
     
   <img src="https://www.svgrepo.com/show/354333/sequelize.svg" alt="sequelize" width="40" height="40"/>
+  
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/800px-Microsoft_Azure.svg.png" alt="sequelize" width="40" height="40"/>
 </p>
 
-
 ## 🖥 Proyect
-
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=faramir07&repo=PI-Dogs-main)](https://github.com/faramir07/PI-Dogs-main)
 

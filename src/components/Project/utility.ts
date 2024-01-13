@@ -1,4 +1,4 @@
-import Dogs from "../../assets/dogs.png";
+import dogs from "../../assets/dogs.png";
 import qatarbets from "../../assets/qatarbets.png";
 import native from "../../assets/native.png";
 import portafolio from "../../assets/portafolio.png";
@@ -11,12 +11,11 @@ export interface ProjectType {
   pageUrl?: string;
 }
 
-
 const projects: ProjectType[] = [
   {
     name: "Pi Dogs",
     gitUrl: "https://github.com/faramir07/PI-Dogs-main",
-    img: `${Dogs}`,
+    img: `${dogs}`,
   },
   {
     name: "Qatarbets-web",
